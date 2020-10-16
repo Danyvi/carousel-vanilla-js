@@ -1,0 +1,60 @@
+.carousel {
+	max-width: 600px;
+	position: relative;
+}
+
+.carousel-item,
+.carousel-item-hidden {
+	display: none;
+}
+
+img {
+	max-width: 600px;
+	width: 100%;
+	height: auto;
+}
+
+.carousel-item-visible {
+	display: block;
+	animation: fadeVisibility 0.5s;
+}
+
+.carousel-actions {
+	/* border: 2px solid blue; */
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+button {
+	border-radius: 50%;
+	background-color: #fff;
+	font-size: 16px;
+	border: 0;
+	font-weight: bold;
+	cursor: pointer;
+	width: 48px;
+	height: 48px;
+	
+}
+
+#carousel-button-prev {
+	margin-left: 20px;
+}
+
+#carousel-button-next {
+	margin-right: 20px;
+}
+
+@keyframes fadeVisibility {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
